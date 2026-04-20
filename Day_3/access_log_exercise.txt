@@ -1,0 +1,28 @@
+
+Format_needed = '{client_ipaddr} - - [{timestamp}] "{request_method} {request_url} HTTP/1.0" {response_code} {response_bytes} "{referer_url}" "{user_agent}" ...'
+
+
+log_format = '51.15.43.205 - - [01/Jan/2017:00:01:14 -0500] "GET /random-thoughts/godmen-leaders-and-superstars.html HTTP/1.0" 200 44545 "-" "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36" 0 0 "off:-:-" 365 855116 192.252.149.39 chandrashekar.info'
+
+
+record = {
+    "client_ipaddr": "51.15.43.205",
+    "timestamp": "01/Jan/2017:00:01:14 -0500"
+    "request_method": "GET",
+    "request_url": "/random-thoughts/godmen-leaders-and-superstars.html",
+    "response_code": "200",
+    "reponse_bytes": "44545",
+    "referer_url": "-",
+    "user_agent": "Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36"
+}
+----------------------------------------------------
+A. Find out the following high-level statistics:
+   1. Which client has the maximum hit on my website
+   2. Total traffic generation on my website
+   3. Top 10 referers to my website
+
+B. Find out the following detailed statistics:
+   1. Top 5 request_url was the mosted accessed with referer_url being set
+   2. Top 10 request_urls and client_ips for response code that is not 200
+   3. Top 10 client that generated the most traffic
+
